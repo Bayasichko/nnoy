@@ -1,0 +1,427 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NNOY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-block">
+            <div class="header-box">
+                <img src="{% static 'assets/Layer_Logo.png' %}" alt="">
+                <h1 class="header-title">ННОУ «Троицкая Православная школа»</h1>
+            </div>
+
+            <div class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">{{ contacts.email }}</a></li>
+                    <li><a href="#" class="nav-link">{{ contacts.phone }}</a></li>
+                    <li><a href="#" class="nav-link">
+                        <svg width="20.003906" height="20.003906" viewBox="0 0 20.0039 20.0039" fill="none"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <path id="Icon"
+                                  d="M9 17C4.58 17 1 13.41 1 9C1 4.58 4.58 1 9 1C13.41 1 17 4.58 17 9C17 13.41 13.41 17 9 17ZM19 19L14.64 14.65"
+                                  stroke="#101828" stroke-opacity="1.000000" stroke-width="2.000000"
+                                  stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="nav-link">
+                        <svg width="28.000000" height="27.722656" viewBox="0 0 28 27.7227" fill="none"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip2_4742">
+                                    <rect id="basil:vk-solid" rx="12.861290" width="26.000000" height="25.722580"
+                                          transform="translate(1.000000 1.000000)" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                            </defs>
+                            <rect id="basil:vk-solid" rx="12.861290" width="26.000000" height="25.722580"
+                                  transform="translate(1.000000 1.000000)" fill="#FCF8EE" fill-opacity="1.000000"/>
+                            <g clip-path="url(#clip2_4742)">
+                                <path id="Vector"
+                                      d="M21.24 18.54L19.52 18.54C18.87 18.54 18.67 18.01 17.5 16.84C16.48 15.85 16.05 15.73 15.78 15.73C15.43 15.73 15.33 15.83 15.33 16.32L15.33 17.87C15.33 18.29 15.19 18.54 14.1 18.54C13.03 18.47 12 18.14 11.09 17.59C10.17 17.05 9.4 16.29 8.84 15.38C7.5 13.72 6.57 11.76 6.12 9.67C6.12 9.41 6.21 9.18 6.71 9.18L8.43 9.18C8.87 9.18 9.03 9.37 9.21 9.83C10.05 12.29 11.48 14.44 12.05 14.44C12.28 14.44 12.37 14.34 12.37 13.78L12.37 11.25C12.3 10.09 11.69 9.99 11.69 9.57C11.69 9.46 11.74 9.36 11.83 9.28C11.91 9.21 12.01 9.17 12.13 9.18L14.84 9.18C15.21 9.18 15.33 9.36 15.33 9.8L15.33 13.23C15.33 13.6 15.49 13.72 15.6 13.72C15.82 13.72 16 13.6 16.4 13.19C17.28 12.13 17.99 10.94 18.52 9.67C18.57 9.51 18.68 9.39 18.81 9.3C18.95 9.21 19.11 9.16 19.27 9.18L21 9.18C21.51 9.18 21.62 9.43 21.51 9.8C20.89 11.21 20.11 12.54 19.2 13.78C19.01 14.07 18.94 14.21 19.2 14.55C19.37 14.81 19.98 15.31 20.38 15.79C20.97 16.38 21.46 17.06 21.83 17.81C21.98 18.29 21.73 18.54 21.24 18.54Z"
+                                      fill="#4F5F4D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                            <rect id="basil:vk-solid" rx="12.861290" width="26.000000" height="25.722580"
+                                  transform="translate(1.000000 1.000000)" stroke="#4F5F4D" stroke-opacity="1.000000"
+                                  stroke-width="2.000000"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <!--первая секция это второй header типо -->
+
+    <section class="header-site">
+        <div class="container">
+            <div class="header-site-block">
+                <div class="main-nav">
+                    <ul class="header-site-list">
+                        <li><a href="#" class="header-nav-link">О нас</a></li>
+                        <li><a href="#" class="header-nav-link">Родителям</a></li>
+                        <li><a href="#" class="header-nav-link">Учащимся</a></li>
+                        <li><a href="#" class="header-nav-link">Педагогам</a></li>
+                        <li><a href="#" class="header-nav-link">Дополнительное образование</a></li>
+                        <li><a href="#" class="header-nav-link">Контакты </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- вторая секция   -->
+
+    <section class="history-invite">
+        <div class="container">
+            <div class="history-invite-block">
+                <div class="Lesson-time">
+                    <span class="Lesson-time-title">8:31 </span>
+                    <span class="Lesson-time-title">1 урок</span>
+                </div>
+                <div class="history-invite-box">
+                    <h2 class="history-invite-title">
+                        {{ main_page_info.hero_title }}
+                    </h2>
+                    <button class="history-invite-btn">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- третья секция -->
+
+    <section class="hero-join">
+        <div class="container">
+            <div class="hero-join-block1">
+                <h3 class="hero-join-h3">ЖИЗНЬ ТРОИЦКОЙ ПРАВОСЛАВНОЙ ШКОЛЫ</h3>
+
+                <p style="font-size: 48px; margin-bottom: 20px;">
+                    <span class="green">
+                          Сначала любить - <br>
+                    </span>
+                    <span class="red">
+                        Потом учить!
+                    </span>
+                </p>
+
+                <h4 class="hero-join-h4">НОВОСТИ</h4>
+
+                <div class="hero-join-block">
+                    <div class="hero-join-box">
+                        <!-- это первый бокс и картинка-->
+                        <img src="{{ articles.0.image.url }}" alt="">
+                        <img class="polygon" src="{% static 'assets/Polygon%201.png' %}" alt="">
+
+                        <div class="hero-join-content">
+                            <h3 class="heroJoin-box-title">
+                                {{ articles.0.short_title }}
+                            </h3>
+                            <h4 class="heroJoin-box-h4">{{ articles.0.created_at }}</h4>
+                            <p class="heroJoin-box-text">
+                              {{ articles.0.short_description }}
+                            </p>
+                            <h2 class="join-black-text-underline">Cмотреть все новости</h2>
+                        </div>
+                    </div>
+
+                    <div class="heroJoin-box" style="background: url('{{ articles.1.image.url }}')">
+                        <h2 class="heroJoin-box-h2">{{ articles.1.short_title }}</h2>
+                        <p class="heroJoin-text">К труду и обороне готовы!</p>
+                    </div>
+
+                </div>
+
+
+                <!--                вторая строка блоков-->
+
+                <div class="join-us">
+                    <div class="join-one-box" style="background: url('{{ articles.2.image.url }}')">
+                        <p class="heroJoin-box-texting">{{ articles.2.short_title }}</p>
+                        <p class="join-one-text-underline">Читать полностью</p>
+                    </div>
+                    <div class="join-thy-bo1" style="position: relative;">
+                        <div class="join-fre-box">
+                            <h2>
+                                <span class="green">
+                                     Приложи сердце <br>
+                                      твоё к учению. <br>
+                                </span>
+
+                                <span class="red">
+                                    Пр.23,12
+                                </span>
+                            </h2>
+                            <p 
+                            style="
+                                position: absolute;
+                                width: auto;
+                                bottom: 20px;
+                            " 
+                            class="join-black-text-underline"
+                            >
+                                Почему именно ТПШ?
+                            </p>
+                        </div>
+                        <div class="join-thy-img" style="position: absolute; right: 0;">
+                            <img class="join-img" src="{% static 'assets/Иллюстрация_без_названия%203%204.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- третья строка блоков-->
+
+                <div class="hero-join-block">
+                    <div class="hero-join-box">
+
+                        <img src="{{ articles.3.image.url }}" alt="">
+                        <img class="polygon" src="{% static 'assets/Polygon%201.png' %}" alt="">
+
+                        <div class="hero-join-content">
+                            <h3 class="heroJoin-box-title">
+                              {{ articles.3.short_title }}
+                            </h3>
+                            <h4 class="heroJoin-box-h4">{{ articles.3.created_at }}</h4>
+                            <p class="heroJoin-box-text">
+                                {{ articles.3.short_description }}
+                            </p>
+                            <h2 class="join-black-text-underline">Читать полностью</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="heroJoin-boxing">
+                        <h2 class="heroJoin-boxing-h2">Спектакль: <br>
+                            Спящая красавица4 </h2>
+                        <p class="join-free-text-underline">Ближайшие события!</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--    Четвёртая секция-->
+
+    <section class="become-family">
+        <div class="container">
+            <h2 class="become-family-title">Как стать частью нашей семьи?</h2>
+            <h3 class="become-family-h3">АЛГОРИТМ ПОСТУПЛЕНИЯ</h3>
+            <div class="become-family-content">
+
+                <div class="become-family-block">
+                    <div class="become-family-box">
+                        <img class="become-position" src="{% static 'assets/Rectangle%20237%20(1).png' %}" alt="">
+                        <h3 class="become-box-title">{{ main_page_info.joining_step_1_title }}</h3>
+                        <p class="become-box-text">{{ main_page_info.joining_step_1_description }}</p>
+                    </div>
+
+                    <div class="become-family-box">
+                        <img class="become-position" src="{% static 'assets/Rectangle%20237%20(1).png' %}" alt="">
+                        <h3 class="become-box-title">{{ main_page_info.joining_step_2_title }}</h3>
+                        <p class="become-box-text">{{ main_page_info.joining_step_2_description }}</p>
+                    </div>
+                </div>
+                <div class="become-family-block">
+                    <div class="become-family-box">
+                        <img class="become-position" src="{% static 'assets/Rectangle%20237%20(1).png' %}" alt="">
+                        <h3 class="become-box-title">{{ main_page_info.joining_step_3_title }}</h3>
+                        <p class="become-box-text">{{ main_page_info.joining_step_3_description }}</p>
+                    </div>
+
+                    <div class="become-family-box">
+                        <img class="become-position" src="{% static 'assets/Rectangle%20237%20(1).png' %}" alt="">
+                        <h3 class="become-box-title">{{ main_page_info.joining_step_4_title }}</h3>
+                        <p class="become-box-text">{{ main_page_info.joining_step_4_description }}</p>
+                    </div>
+                </div>
+                <div class="become-family-left">
+                    <button class="become-family-btn">
+                        Подробнее
+                    </button>
+                    <img class="become-family-img" src="{% static 'assets/image_59.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Пятая секция -->
+
+    <section class="map">
+        <div class="container">
+            <h2 class="map-title">
+                Мы будем рады <br>
+                познакомиться с Вами!
+            </h2>
+
+            <h3 class="map-title-h3">СПЛАНИРОВАТЬ ВИЗИТ</h3>
+
+            <div class="map-block">
+                <div class="map-box">
+                    <img class="MapMaker" src="{% static 'assets/MapMaker.png' %}" alt="">
+                    <img class="el-map-img" src="{% static 'assets/el_map-marker.png' %}" alt="">
+                    <div class="map-content">
+                        <img class="polygon-2" src="{% static 'assets/Polygon%201.png' %}" alt="">
+
+                        <h2 class="map-content-title">
+                            Как нас найти:
+                        </h2>
+
+                        <div class="map-wrap">
+                            <svg width="18.847656" height="25.000000" viewBox="0 0 18.8477 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector"
+                                      d="M9.42 0C4.21 0 0 4.21 0 9.42C0 11.16 0.33 12.96 1.31 14.25L9.42 25L17.52 14.25C18.41 13.08 18.84 11 18.84 9.42C18.84 4.21 14.62 0 9.42 0ZM9.42 5.45C11.61 5.45 13.39 7.23 13.39 9.42C13.39 11.61 11.61 13.38 9.42 13.38C7.23 13.38 5.45 11.61 5.45 9.42C5.45 7.23 7.23 5.45 9.42 5.45Z"
+                                      fill="#913232" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+
+                            <p class="map-box-text">
+                            {{ contacts.address }}
+                            </p>
+                        </div>
+
+                        <p class="map-content-title">{{ contacts.phone }}</p>
+
+                        <p class="map-red">
+                            {{ contacts.email }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="map-boxing-block">
+                    <div class="map-box-red">
+                        <p class="map-red-title">
+                            Маршруты <br> транспорта
+                        </p>
+                    </div>
+
+                    <div class="map-box-green">
+                        <p class="map-red-title">
+                            Карьера в ТПШ
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <div class="footer-box">
+                <h2 class="footer-box-title">О нас </h2>
+                <ul>
+                    <li><a href="#" class="footer-link">Информация о школе</a></li>
+                    <li><a href="#" class="footer-link">Алгоритм поступления</a></li>
+                    <li><a href="#" class="footer-link">Педагогический состав</a></li>
+                    <li><a href="#" class="footer-link">Галерея</a></li>
+                    <li><a href="#" class="footer-link">СМИ о нас</a></li>
+                    <li><a href="#" class="footer-link">Социально-психологическая служба</a></li>
+                    <li><a href="#" class="footer-link">Органы управления</a></li>
+                    <li><a href="#" class="footer-link">Сведения об образовательной организации</a></li>
+                    <li><a href="#" class="footer-link">Контакты</a></li>
+                    <li><a href="#" class="footer-link"></a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-box-title">Родителям </h2>
+                <ul>
+                    <li><a href="#" class="footer-link">Алгоритм поступления</a></li>
+                    <li><a href="#" class="footer-link">Свободные места в классахя</a></li>
+                    <li><a href="#" class="footer-link">Расписание звонков</a></li>
+                    <li><a href="#" class="footer-link">Расписание автобусов</a></li>
+                    <li><a href="#" class="footer-link">Новости школы</a></li>
+                    <li><a href="#" class="footer-link">Правила доступа и нахождения в школе</a></li>
+                    <li><a href="#" class="footer-link">Родительский совет</a></li>
+                    <li><a href="#" class="footer-link">Помощь школе</a></li>
+                    <li><a href="#" class="footer-link">Работа с детьми с особыми потребностями</a></li>
+                    <li><a href="#" class="footer-link">Документы</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-box-title">Учащимся </h2>
+                <ul>
+                    <li><a href="#" class="footer-link">Расписание автобусов</a></li>
+                    <li><a href="#" class="footer-link">Расписание звонков</a></li>
+                    <li><a href="#" class="footer-link">Новости школы</a></li>
+                    <li><a href="#" class="footer-link">Правила доступа и нахождения в школе</a></li>
+                    <li><a href="#" class="footer-link">Предметные недели</a></li>
+                    <li><a href="#" class="footer-link">Государственная итоговая аттестация</a></li>
+                    <li><a href="#" class="footer-link">Олимпиады и конкурсы</a></li>
+                    <li><a href="#" class="footer-link">Ссылки на полезные ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-box-title">Педагогам </h2>
+                <ul>
+                    <li><a href="#" class="footer-link">Расписание автобусов</a></li>
+                    <li><a href="#" class="footer-link">Расписание звонков</a></li>
+                    <li><a href="#" class="footer-link">Предметные недели</a></li>
+                    <li><a href="#" class="footer-link">Вакансии</a></li>
+                    <li><a href="#" class="footer-link">Ссылки на полезные ресурсы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-header">
+            <div class="footer-box footer-right">
+                <h2>ННОУ «Троицкая Православная школа»</h2>
+            </div>
+
+            <div class="footer-box footer-centent">
+                <p>                            {{ contacts.address }}</p>
+            </div>
+
+            <div class="footer-box footer-left">
+                <div class="contact-item">
+                    <img src="{% static 'assets/basil_vk-solid.png' %}" alt="VK">
+                    <p>Тел.: {{ contacts.phone }}</p>
+                </div>
+                <div class="contact-item">
+                    <p>E-Mail: {{ contacts.email }}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

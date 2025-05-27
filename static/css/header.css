@@ -1,0 +1,39 @@
+.header{
+    padding: 26px;
+    width: 100%;
+    background: rgb(252, 248, 238);
+}
+.header-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    gap: 49px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 49px;
+}
+
+.header-title{
+    color: rgb(2, 15, 1);
+    font-family: TriodPostnaja , serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 49px;
+    text-align: left;
+}
+
+.nav-link{
+    color: rgb(2, 15, 1);
+    font-family: Literata SansSerif, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
